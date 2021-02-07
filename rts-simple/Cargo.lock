@@ -350,6 +350,29 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "41cc0f7e4d5d4544e8861606a285bb08d3e70712ccc7d2b84d7c0ccfaf4b05ce"
 
 [[package]]
+name = "rts-core"
+version = "0.1.0"
+dependencies = [
+ "crossbeam",
+ "glam",
+ "legion",
+ "rand",
+]
+
+[[package]]
+name = "rts-network"
+version = "0.1.0"
+
+[[package]]
+name = "rts-render"
+version = "0.1.0"
+dependencies = [
+ "glam",
+ "legion",
+ "sdl2",
+]
+
+[[package]]
 name = "rts-simple"
 version = "0.1.0"
 dependencies = [
@@ -357,6 +380,9 @@ dependencies = [
  "glam",
  "legion",
  "rand",
+ "rts-core",
+ "rts-network",
+ "rts-render",
  "sdl2",
 ]
 
